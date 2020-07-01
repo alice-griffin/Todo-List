@@ -1,0 +1,28 @@
+.fas {
+    float: right; 
+    margin-right: 5px; 
+    position: relative; 
+    top: 6px; 
+}
+
+.add {
+    display: block; 
+    line-height: 30px;
+    background-color: #f857a6;
+    border: none; 
+    color: white;  
+    font-family: 'Lato', sans-serif;
+    margin-top: 5px; 
+}
+
+input {
+    line-height: 25px; 
+    font-size: 20px; 
+}
+
+.completed {
+    border: none; 
+    color: #f857a6;
+    background-color: white; 
+    border: 1px solid #f857a6;
+}
