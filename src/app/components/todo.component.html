@@ -1,11 +1,8 @@
 <h3>TODO List</h3>
 <p>A place to store your todos</p>
-<input placeholder="filter your todos"/>
-<div *ngFor="let item of todoItems; let i = index" [ngStyle]="{'text-decoration': item.completed ? 'line-through' : 'none'}" (click)='itemClicked(item)'>
-    <button class="completed" *ngIf="!item.completed" (click)='itemClicked(item)'>complete</button>{{ item.task }}<i class="fas fa-times"></i>
-</div>
+<input [(ngModel)]="filterInput" (input)="filteredText()" placeholder="filter your todos"/>
+<app-todo-item (remove)="removeTask($event)" [todoItem]="item" *ngFor="let item of filteredItems"></app-todo-item>
+<input placeholder="add your todos" [(ngModel)]="todoInput"/>
 
-<input placeholder="add your todos"/>
-
-<button class="add">Add</button>
+<button (click)='addTask()' class="add">Add</button>
 

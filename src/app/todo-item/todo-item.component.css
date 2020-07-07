@@ -1,0 +1,13 @@
+.completed {
+    border: none; 
+    color: #f857a6;
+    background-color: white; 
+    border: 1px solid #f857a6;
+}
+
+.fas {
+    float: right; 
+    margin-right: 5px; 
+    position: relative; 
+    top: 6px; 
+}
